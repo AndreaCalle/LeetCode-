@@ -1,4 +1,8 @@
-        ArrayList array = new ArrayList<String>;  
+        
+/*
+need to update it weekly 
+*/
+ArrayList array = new ArrayList<String>;  
         //or
         String temp = ""; 
         for(int i = 0 ; i < s.length(); i ++){
