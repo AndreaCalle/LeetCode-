@@ -82,6 +82,8 @@ class Solution {
         return head.next; 
     }
 }
+
+//not compiled 
 Question #4 Hacker Leet 
     //import com.google.common.collect.ObjectArrays;
 import java.util.Arrays;
@@ -89,7 +91,8 @@ import java.util.Arrays;
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
       List list = new ArrayList(Arrays.asList(nums1));
-      list.addAll(Arrays.asList(nums2));
+       //need to read strings in array and organise it      
+      //list.addAll(Arrays.asList(nums2));
      // Arrays [] temp = Arrays.sort(list.toArray()); 
       System.out.println(list); 
       return 1.0 ; 
