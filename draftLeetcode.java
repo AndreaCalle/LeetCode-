@@ -84,6 +84,12 @@ class Solution {
 }
 
 //not compiled 
+/*
+EXAMPLE
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+*/
 Question #4 Hacker Leet 
     //import com.google.common.collect.ObjectArrays;
 import java.util.Arrays;
