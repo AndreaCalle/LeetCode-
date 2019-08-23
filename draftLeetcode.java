@@ -84,12 +84,7 @@ class Solution {
 }
 
 //not compiled 
-/*
-EXAMPLE
-Input: "babad"
-Output: "bab"
-Note: "aba" is also a valid answer.
-*/
+
 Question #4 Hacker Leet 
     //import com.google.common.collect.ObjectArrays;
 import java.util.Arrays;
@@ -102,5 +97,32 @@ class Solution {
      // Arrays [] temp = Arrays.sort(list.toArray()); 
       System.out.println(list); 
       return 1.0 ; 
+    }
+}
+
+
+//Question #5 
+/*
+EXAMPLE
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+*/
+///not compile just sudo code 
+class Solution {
+    public String longestPalindrome(String s) {
+        String temp = ""; 
+        for(int i = 0 ; i < s.length(); i++){
+            for(int j = s.length(); j > 0 ; j--){
+               if(s.substring(i,j) == s.reverse.substring(1,j)){
+                    String temp2 = s.substring(i,j); 
+                    if(temp2.length()>temp.length()){
+                        temp = temp2 ; 
+         
+                    }
+                }
+                
+            }
+        }
     }
 }
