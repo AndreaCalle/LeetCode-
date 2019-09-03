@@ -126,3 +126,31 @@ class Solution {
         }
     }
 }
+
+///new version 
+class Solution {
+    public String longestPalindrome(String s) {
+        String temp = ""; 
+        StringBuilder input1 = new StringBuilder();
+         System.out.println(s.length());
+        for(int i = 0 ; i <= s.length() ; i++){
+            for(int j = s.length() ; j >= i; j--){
+                input1.append(s); 
+                System.out.println("reverse: "+input1.reverse().substring(i,j));
+                System.out.println("s: "+s.substring(i,j));
+               // System.out.println("i: " + i );
+               // System.out.println("j: " + j );
+               if(s.substring(i,j).equals(input1)){//.reverse().substring(i,j))){
+                    String temp2 = s.substring(i,j); 
+                    if(temp2.length()>temp.length()){
+                        temp = temp2 ; 
+                        System.out.println("tmp:"+temp);
+         
+                    }
+                }
+                
+            }
+        }
+        return temp; 
+    }
+}
